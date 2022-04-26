@@ -1,0 +1,84 @@
+
+#page{
+    background-color: #fdffcd;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd hd hd hd hd "
+      "hd hd hd hd hd "
+      "nav nav nav nav nav "
+      "main main main sd sd"
+      "main main main sd sd"
+      "main main main sd sd"
+      "main main main sd sd"
+      "ft ft ft ft ft";
+}
+.header {
+    background-color: #fdffcd;
+    grid-area: hd;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #ffebbb;
+    grid-area: nav;
+    text-align: center;
+  }
+  
+  main {
+    background-color: #fdffcd;
+    grid-area: main;
+  }
+  
+.foot {
+    background-color: #ffebbb;
+    grid-area: ft;
+  }
+.sidebar{
+      background-color: #ffebbb;
+      grid-area: sd;
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-areas:
+        "sidebar sidebar"
+        "pic1 pic2 "
+        "pic3 pic4 ";
+  }
+  ul{
+      list-style-type: none;
+  }
+  li{
+      display: inline;
+  }
+  grid-item {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  } 
+  #pic1{
+    grid-area: pic1;
+  }
+  #pic2{
+    grid-area: pic2;
+  }
+  #pic3{
+    grid-area: pic3;
+  }
+  #pic4{
+    grid-area: pic4;
+  }
+  img{
+    width:100%;
+    height:100%;
+  }
+  #sidebarText{
+    grid-area: sidebar;
+    text-align: center;
+  }
+
+
+
+   
